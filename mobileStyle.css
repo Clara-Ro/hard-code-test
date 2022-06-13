@@ -1,0 +1,249 @@
+@media(max-width:1200px){
+    .express-img{
+        object-fit: fill;
+        height: 100%;
+    }
+    .express-img:first-child{
+        height: 110%;
+    }
+}
+
+@media (max-width:1100px){
+
+    .footer-title{
+        font-size: 35px;
+    }
+    .footer-title::after{
+        font-size: 75px;
+    }
+}
+
+@media (max-width:375px){
+
+    
+    .hard-code-logo{
+        width: 32px;
+        margin-right: auto;
+    }
+
+    .buttons-header, .whatsapp, .heroSession, .background-homepage, .background-manifest{
+       display: none;
+    }
+
+    .firstSection{
+        padding-bottom: 6rem;
+    }
+
+    .buttons.active .buttons-header{
+        display: block;
+    }
+
+    .buttons.active + .backdrop{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(2px);
+    }
+
+    .buttons.active{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #2d2d2d;
+        z-index: 10; 
+    }
+
+    .menu-header{
+        display:flex;
+        
+    }
+
+    .menu-header:hover{
+        cursor: pointer;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+    .sub-title{
+        font-size: 16px;
+    }
+    .learnmore-button{
+        font-size: 18px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
+    .card-title{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 15px;
+    }
+
+    .manifest{
+        padding:  2rem 0.5rem;
+    }
+
+    .manifest-img{
+        width: 336px;
+    }
+
+    .manifest-title{
+        font-size: 26px;
+    }
+
+    .manifest-texts{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: flex-start;
+    }
+    
+    .manifest-text{
+        font-size: 16px;
+    }
+
+    .methodology{
+        padding: 1.5rem;
+    }
+
+    .methodology-title{
+        font-size: 24px;
+        margin-bottom: 1rem;
+        
+    }
+
+    .methodology-texts, .methodology-img{
+        display: none;
+    }
+
+    .methodology-img-mobile{
+        display: flex;
+        padding-bottom: 3rem;
+    }
+
+    .methodology-img2{
+        width: 375px;
+    }
+
+    .express{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .express-card:nth-child(1){
+        order: -5;
+    }
+    .express-img:nth-child(2){
+        order: -6;
+    }
+    .express-img:nth-child(3){
+        order: -4;
+    }
+    .express-card:nth-child(4){
+        order: -3;
+    }
+    .express-card:nth-child(5){
+        order: -1;
+    }
+    .express-img:nth-child(6){
+        order: -2;
+    }
+    
+    .graphics, .graphics-intern, .intern-text-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .graphics{
+        padding-bottom: 2rem;
+    }
+
+    .intern-title{
+        font-size: 22px;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+    .intern-subtitle{
+        font-size: 16px;
+    }
+
+    .intern-text{
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+
+    .intern-text:last-child{
+        border: 0;
+        padding:  1rem 0;
+    }
+
+    .graphics-buttons{
+        display: none;
+    }
+
+    .graphic-img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .imgs .images{
+        width: 200%;
+        object-fit: cover;
+    }
+    .imgs{
+        margin-bottom: 2rem;
+    }
+
+    .logo-footer{
+        margin:0;
+        width: 40px;
+    }
+
+    .footer-top{
+        width: 100%;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .footer-title{
+        font-size: 25px;
+    }
+
+    .footer-title::after{
+        font-size: 37px;
+    }
+
+    .footer-bottom{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .footer-menu{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .hard-code-title, .service-title{
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    .hard-code-button, .service-button{
+        font-size: 14px;
+    }
+
+}

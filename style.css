@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+html,body{
+    font-family: 'Montserrat', sans-serif; 
+    width: 100vw;
+    height: 100vh;
+    background-color: #161616;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container, .header, .footer{
+    max-width: 1600px;
+}
+
+.header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons-header{
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    margin: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.buttons-header:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.whatsapp:hover{
+    cursor: pointer;
+}
+
+.menu-header{
+    display: none;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 64px;
+    padding-top: 3rem;
+    font-weight: 900;
+}
+
+.title::after{
+    content: 'Tecnologia';
+    color: #E73634;
+}
+
+.sub-title{
+    font-size:36px ;
+    font-weight: 500;
+}
+
+.homepage{
+    position: relative;
+    z-index: 1;
+   
+}
+
+.firstSection {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.firstSection > div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heroSession{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: -2rem;
+    object-fit: contain;
+    height: 100%;
+    
+}
+
+.learn-more{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.learnmore-button{
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.learnmore-button:hover, .arrow-down{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.background-homepage{
+    position: absolute;
+    z-index: -1;
+    transform: translateY(30%);
+    left: -0.5%;
+    bottom: -3rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    background-color: #0E0E0E;
+    
+}
+
+.card{
+   background-color: #161616; 
+   padding: 20px;
+   margin: 15px;
+   width: 26%;
+}
+
+.card:first-child{
+    background-color: #E73634;
+}
+
+.card-title{
+    display: flex;
+    flex-direction: column;
+    font-size:18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card-title::after{
+    content: " ";
+    background-color: #000000;
+    margin: .5rem 0;
+    width: 25%;
+    height: 3px;
+}
+
+.card-text{
+    font-weight: 400;
+}
+
+.card:not(:first-child) .card-title::after{
+    background-color: #E73634;
+}
+
+.manifest{
+    background-color: #E73634;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.manifest-title{
+    transform: translateY(-30%);
+    text-transform: uppercase;
+    width: 90%;
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.manifest-texts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 90%;
+    z-index: 5;
+}
+
+.manifest-text{
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.manifest-text:last-child:after{
+    content: "Hey ho, let's code!" ;
+    color: #000000;
+    font-weight: 900;
+}
+
+.manifest-img{
+  z-index: 0;
+}
+
+.background-manifest{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right:0;
+    transform: translate(-0%, -15%);
+}
+
+.methodology{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 5rem 0 5rem;
+}
+
+.methodology-title{
+    font-size: 54px;
+    font-weight: 900;
+    margin-bottom: 5rem;
+}
+
+.methodology-img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.methodology-img-mobile{
+    display: none;
+}
+
+.methodology-texts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.methodology-text{
+    margin: 0 15px 9rem 15px;
+    text-align: center;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.express{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.express-card:nth-child(even){
+    background-color:#E73634;
+}
+
+.express-card{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #0E0E0E;
+}
+
+.express-img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.express-title{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.express-title::after{
+    content: " ";
+    background-color: #000000;
+    margin: .5rem 0;
+    width: 58%;
+    height: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.express-card:nth-child(odd) .express-title::after{
+    background-color: #E73634;
+}
+
+.express-text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.express-card:nth-child(even) button{
+    color: #E73634;
+}
+
+.express-button{
+    background-color: #FFFFFF;
+    padding: 8px 32px;
+    margin-top: 3rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.express-button:hover{
+    cursor: pointer;
+}
+
+.graphics{
+    padding: 5rem 2rem;
+}
+
+.graphics-intern{
+    display: flex;
+    flex-direction: row;
+}
+
+.intern-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.intern-title{
+    color: #E73634;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.intern-subtitle{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.intern-text-container {
+    display: flex;
+}
+
+.intern-text:last-child {
+    border-left: 3px solid #FFF;
+    padding-left: 1rem;
+}
+
+.graphics-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.graphics-button{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+
+.graphics-button:last-child{
+    border-left: 1px solid #FFFFFF;
+}
+
+.no-active{
+    opacity: 0.5;
+}
+
+.graphics-button-arrow{
+    margin: 10px;
+}
+
+.graphics-button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.graphics::after{
+    content: " ";
+    background-color: #E73634;
+    margin: .5rem 0;
+    width: 35%;
+    height: 3px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.images{
+    object-fit: contain;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+
+.background-footer{
+    position: absolute;
+    z-index: -1;
+    left: -10%;
+    top: 0;
+    transform: scale(0.85) translateY(-12%);
+    
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-title{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.footer-title::after{
+    content: "Let's Code!";
+    text-transform: uppercase;
+    font-size: 86px;
+    font-weight: 800;
+}
+.logo-footer{
+    margin: 0 0 1.5rem auto;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.social-img{
+    margin: 10px;
+}
+
+.social-img:hover{
+    cursor: pointer;
+}
+
+.hard-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.hard-code-title, .service-title{
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: start;
+    margin-bottom: 5px;
+}   
+
+.hard-code-button, .service-button{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.hard-code-button:hover, .service-button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
